@@ -1,2 +1,2 @@
-# canvojs.github.io
+# CanvoJS.GitHub.io
 The official Canvo website
