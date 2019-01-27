@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import './vars';
+@import './footer';
 
 * {
 	box-sizing: border-box;
@@ -12,6 +13,25 @@ html, body {
 	padding: 0;
 	background-color: $grayBackground;
 }
+
+::-webkit-scrollbar-track {
+	background-color: $gray;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	background-color: $gray;
+
+	&:hover {
+		width: 10px;
+	}
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: $green;
+}
+
 
 ul.nav {
 	background-color: $green;
@@ -96,10 +116,12 @@ header.jumbo {
 	display: inline-block;
 	transition: 0.3s;
 
-	&.primary {
-		background-color: $green;
-		&:hover {
-			background-color: darken($green, 10);
+	@each $color, $hex in $themeColors {
+		&.#{$color} {
+			background-color: $hex;
+			&:hover {
+				background-color: darken($hex, 10);
+			}
 		}
 	}
 
@@ -112,13 +134,24 @@ header.jumbo {
 	}
 }
 
+a {
+	transition: 0.3s;
+	color: #fff;
+	text-decoration: none;
+
+	&:hover {
+		color: darken(#fff, 10);
+	}
+}
+
 .grid {
 	display: grid;
 	grid-gap: 0.7rem;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto auto;
 
 	& > * {
 		height: 100%;
+		display: inline-block;
 	}
 }
 
@@ -146,4 +179,10 @@ header.jumbo {
 
 .text-center {
 	text-align: center;
+}
+
+@each $color, $hex in $themeColors {
+	.text-#{$color} {
+		color: $hex;
+	}
 }

@@ -1,4 +1,103 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+.site-footer {
+  background-color: #28b463;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 1.4rem; }
+  .site-footer hr {
+    border-top-color: #fff;
+    opacity: 0.5; }
+    .site-footer hr.small {
+      margin: 20px 0; }
+  .site-footer h6 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px; }
+  .site-footer .social-icons {
+    text-align: right; }
+    .site-footer .social-icons a {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      margin-left: 6px;
+      margin-right: 0;
+      border-radius: 100%;
+      background-color: #3bd47c; }
+
+.footer-links {
+  padding-left: 0;
+  list-style: none; }
+  .footer-links li {
+    display: block; }
+  .footer-links.inline li {
+    display: inline-block; }
+
+.copyright-text {
+  margin: 0; }
+
+@media (max-width: 991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px; } }
+
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0; }
+  .site-footer .copyright-text, .site-footer .social-icons {
+    text-align: center; } }
+
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none; }
+  .social-icons li {
+    display: inline-block;
+    margin-bottom: 4px; }
+    .social-icons li.title {
+      margin-right: 15px;
+      text-transform: uppercase;
+      color: #96a2b2;
+      font-weight: 700;
+      font-size: 13px; }
+  .social-icons a {
+    background-color: #3bd47c;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear; }
+    .social-icons a:active, .social-icons a:hover, .social-icons a:focus {
+      color: #fff;
+      background-color: #29aafe; }
+    .social-icons a.dribbble:hover {
+      background-color: #ea4c89; }
+    .social-icons a.facebook:hover {
+      background-color: #3b5998; }
+    .social-icons a.twitter:hover {
+      background-color: #00aced; }
+    .social-icons a.linkedin:hover {
+      background-color: #007bb6; }
+    .social-icons a.github:hover {
+      background-color: #333; }
+  .social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px; }
+
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600; } }
+
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -8,6 +107,19 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #2a3c4e; }
+
+::-webkit-scrollbar-track {
+  background-color: #212f3d; }
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #212f3d; }
+  ::-webkit-scrollbar:hover {
+    width: 10px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #28b463; }
 
 ul.nav {
   background-color: #28b463;
@@ -74,17 +186,45 @@ header.jumbo {
     background-color: #28b463; }
     .button.primary:hover {
       background-color: #1f8a4c; }
+  .button.dark {
+    background-color: #212f3d; }
+    .button.dark:hover {
+      background-color: #0f161c; }
+  .button.secondary {
+    background-color: #2e86c1; }
+    .button.secondary:hover {
+      background-color: #246998; }
+  .button.danger {
+    background-color: #e74c3c; }
+    .button.danger:hover {
+      background-color: #d62c1a; }
+  .button.info {
+    background-color: #9b59b6; }
+    .button.info:hover {
+      background-color: #804399; }
+  .button.warning {
+    background-color: #f5b041; }
+    .button.warning:hover {
+      background-color: #f29c11; }
   .button:focus {
     outline: none; }
   .button:hover {
     background-color: #97afc6; }
 
+a {
+  transition: 0.3s;
+  color: #fff;
+  text-decoration: none; }
+  a:hover {
+    color: #e6e6e6; }
+
 .grid {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: auto auto auto; }
+  grid-template-columns: auto auto; }
   .grid > * {
-    height: 100%; }
+    height: 100%;
+    display: inline-block; }
 
 .card {
   background-color: #33495e;
@@ -102,3 +242,21 @@ header.jumbo {
 
 .text-center {
   text-align: center; }
+
+.text-primary {
+  color: #28b463; }
+
+.text-dark {
+  color: #212f3d; }
+
+.text-secondary {
+  color: #2e86c1; }
+
+.text-danger {
+  color: #e74c3c; }
+
+.text-info {
+  color: #9b59b6; }
+
+.text-warning {
+  color: #f5b041; }

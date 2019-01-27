@@ -1,5 +1,26 @@
 $green: #28b463;
 $gray: #212f3d;
+$red: #e74c3c;
+$yellow: #f5b041;
+$purple: #9b59b6;
+$blue: #2e86c1;
+
+$themeColors: (
+	'primary': $green,
+	'dark': $gray,
+	'secondary': $blue,
+	'danger': $red,
+	'info': $purple,
+	'warning': $yellow,
+);
+
+$social: (
+	'dribbble': #ea4c89,
+	'facebook': #3b5998,
+	'twitter': #00aced,
+	'linkedin': #007bb6,
+	'github': #333,
+);
 
 $grayBackground: lighten($gray, 5);
 
