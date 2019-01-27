@@ -56,7 +56,7 @@ ul.nav {
 
 header.jumbo {
 	width: 100%;
-	margin: 0;
+	margin: 0 0 1rem 0;
 	padding: 1.5rem;
 	background-color: lighten($grayBackground, 5);
 
@@ -110,4 +110,40 @@ header.jumbo {
 	&:hover {
 		background-color: darken($defaultButtonColor, 10);
 	}
+}
+
+.grid {
+	display: grid;
+	grid-gap: 0.7rem;
+	grid-template-columns: auto auto auto;
+
+	& > * {
+		height: 100%;
+	}
+}
+
+.card {
+	$cardBackground: lighten($grayBackground, 5);
+	background-color: $cardBackground;
+	padding: 1rem;
+	border: 1px solid darken($cardBackground, 5);
+
+	& .card-title {
+		display: block;
+		text-align: center;
+		font-size: 2rem;
+
+		& .icon {
+			font-size: 3rem;
+			display: block;
+		}
+	}
+
+	& .card-text {
+		font-size: 1.12rem;
+	}
+}
+
+.text-center {
+	text-align: center;
 }
