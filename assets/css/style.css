@@ -86,6 +86,8 @@
       background-color: #007bb6; }
     .social-icons a.github:hover {
       background-color: #333; }
+    .social-icons a.discord:hover {
+      background-color: #7892da; }
   .social-icons.size-sm a {
     line-height: 34px;
     height: 34px;
@@ -100,13 +102,13 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  color: #fff; }
+  font-family: 'Roboto', sans-serif; }
 
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #2a3c4e; }
+  background-color: #2a3c4e;
+  color: #fff; }
 
 ::-webkit-scrollbar-track {
   background-color: #212f3d; }

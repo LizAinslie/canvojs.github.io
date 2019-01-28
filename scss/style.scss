@@ -5,13 +5,13 @@
 * {
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
-	color: #fff;
 }
 
 html, body {
 	margin: 0;
 	padding: 0;
 	background-color: $grayBackground;
+	color: #fff;
 }
 
 ::-webkit-scrollbar-track {
